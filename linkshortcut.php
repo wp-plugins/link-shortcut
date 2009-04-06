@@ -24,7 +24,7 @@ Version: 1.0
 */
 
 /** SETTINGS AND REQUIRED FILES */
-define("LINKSHORTCUT_NAME", "/linkshortcut");
+define("LINKSHORTCUT_NAME", "/link-shortcut");
 define("LINKSHORTCUT_UI_LOC", ABSPATH . PLUGINDIR . LINKSHORTCUT_NAME . "/admin");
 require_once(ABSPATH . PLUGINDIR . LINKSHORTCUT_NAME . "/lib/Linkshortcut.php");
 require_once(ABSPATH . PLUGINDIR . LINKSHORTCUT_NAME . "/lib/LinkshortcutInstaller.php");
