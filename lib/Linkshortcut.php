@@ -31,6 +31,10 @@ class LinkshortcutManager{
    */
   function getFinalDest(){
     $ident = $this->wp_query->query_vars['pagename'];
+    //2.7 and 2.7.1 consistency
+    if($ident == ""){
+      $ident = $this->wp_query->query['name'];
+    }
     $link_array = $this->LinkshortcutDataManager->getLinkByIdent($ident);
     return $link_array['url'];
   }
