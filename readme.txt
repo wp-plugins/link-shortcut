@@ -4,8 +4,8 @@ Tags: permalink, link, links, redirect, shortcut, seo, tinyurl
 Donate link: http://www.husani.com/ventures/wordpress-plugins/linkshortcut/#donate
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 1.0
-Version: 1.0
+Stable tag: 1.1
+Version: 1.1
 
 Create and manage TinyURL-like URLs (yourblog.com/33ks8s) that redirect to pages both inside and outside your blog.  Can also create human-readable aliases (yourblog.com/facebook)
 
@@ -22,6 +22,8 @@ http://www.husani.com/link123
 **IMPORTANT: YOU MUST USE NON-UGLY PERMALINKS FOR THIS PLUGIN TO WORK.**  Your permalink structure cannot be yourblog.com?p=84, it must be date-based, name-based, etc.
 
 Link Shortcut is released to the Wordpress community under the GPL.  Please feel free to modify as you see fit, and if you find this plugin useful, donate to the author.  All feedback is welcome at wordpressplugins@husani.com, and you can visit the author's websites at http://www.husani.com.
+
+**UPDATE FOR VERSION 1.1** Fixed directory name bug.  Sorry about that.
 
 == Installation ==
 
@@ -47,3 +49,4 @@ Yes.  Upon activation, Link Shortcut creates a table and stores all links in tha
 1. List of links
 2. Add new link
 3. Edit link
+
