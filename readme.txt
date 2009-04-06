@@ -23,7 +23,10 @@ http://www.husani.com/link123
 
 Link Shortcut is released to the Wordpress community under the GPL.  Please feel free to modify as you see fit, and if you find this plugin useful, donate to the author.  All feedback is welcome at wordpressplugins@husani.com, and you can visit the author's websites at http://www.husani.com.
 
+**UPDATE FOR VERSION 1.2** Fixed another bug -- couldn't find proper item in query array.
+
 **UPDATE FOR VERSION 1.1** Fixed directory name bug.  Sorry about that.
+
 
 == Installation ==
 
