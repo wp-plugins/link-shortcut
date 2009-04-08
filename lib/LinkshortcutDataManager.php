@@ -5,13 +5,14 @@
 class LinkshortcutDataManager{
 
   var $db;
-  var $ident_length = 6;
+  var $ident_length;
 
   function LinkshortcutDataManager(){
     //set up db connectivity and other class-wide variables
     global $wpdb;
     $this->db = $wpdb;
     $this->table_name = $wpdb->prefix . "linkshortcut";
+    $this->ident_length = get_option('linkshortcut_length');
   }
 
   /**
@@ -50,6 +51,10 @@ class LinkshortcutDataManager{
 	$this->error_msg = "A link with that identifier already exists, please choose another.";
 	return false;
       }
+    }
+    //add subdir to ident if required
+    if(get_option('linkshortcut_subdir') != ""){
+      $ident = get_option('linkshortcut_subdir') . "/" . $ident;
     }
     $sql = "INSERT INTO " . $this->table_name . "
 	   (ident, name, url) VALUES ('" . $ident . "', '" . $name . "', '". $url ."')";
