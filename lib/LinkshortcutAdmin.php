@@ -22,6 +22,10 @@ class LinkshortcutAdmin{
 			   "edit" => array(
 					   "page_title" => "Link Shortcut - Edit Link Shortcut",
 					   "xhtml_file" =>  "/admin/edit.inc.php"
+					   ),
+			   "options" => array(
+					   "page_title" => "Link Shortcut - Options",
+					   "xhtml_file" =>  "/admin/options.inc.php"
 					   )
 			   );
   
@@ -84,7 +88,9 @@ class LinkshortcutAdmin{
 
 
   function displayOptionsPanel(){
-    echo "OPTIONS!!!!";
+    //include xhtml.  display logic (i.e., array iteration and such) is handled in that file.
+    extract($this->xhtml_array['options']);
+    include_once($this->xhtml_path . $xhtml_file);
   }
 
   /**

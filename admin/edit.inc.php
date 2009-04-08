@@ -73,7 +73,7 @@ span#ident_custom_input_status_msg{
 	    <h3>Shortcut URL</h3>
 	    <div class="inside">
 	      
-	      <p><strong><?=get_bloginfo('siteurl')?>/<?=$link_array['ident']?></strong></p>
+	      <p><strong><a href="<?=trim(get_bloginfo('siteurl'), '\/')?>/<?=trim($link_array['ident'], '/')?>" target="_blank"><?=trim(get_bloginfo('siteurl'), '\/')?>/<?=trim($link_array['ident'], '/')?></a></strong></p>
 
 	    </div>
 	  </div>

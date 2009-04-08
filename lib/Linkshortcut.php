@@ -29,8 +29,12 @@ class LinkshortcutManager{
   /**
    * parse query string, get URL from db
    */
-  function getFinalDest(){
-    $ident = $this->wp_query->query_vars['pagename'];
+  function getFinalDest(){    
+    $ident = $_SERVER['REQUEST_URI'];
+    //if ident only has one slash, it's not using a subdir, so account for this.  otherwise the db lookup will return false.
+    if(substr_count($ident, "/") == 1){
+      $ident = trim($ident, "/");
+    }
     $link_array = $this->LinkshortcutDataManager->getLinkByIdent($ident);
     return $link_array['url'];
   }
