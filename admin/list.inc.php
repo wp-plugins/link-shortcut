@@ -21,7 +21,7 @@ are editing, we'll depending on the query string, we include the proper UI file.
          <tr class="<?=$alt?>" valign="top">
 	   <td><a href="<?=$_SERVER['PHP_SELF']?>?page=linkshortcut_list&action=edit&linkshortcut_id=<?=$link_array['linkshortcut_id']?>"><strong>edit</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?=$_SERVER['PHP_SELF']?>?page=linkshortcut_list&action=delete&linkshortcut_id=<?=$link_array['linkshortcut_id']?>" onclick="if ( confirm('You are about to delete this link \'<?=$link_array['name']?>\'\n \'Cancel\' to stop, \'OK\' to delete.') ) { return true;}return false;"><strong>delete</strong></a></td>
 	   <td><strong><?=$link_array['name']?></strong></td>
-	   <td><a href="<?=get_bloginfo('siteurl')?>/<?=$link_array['ident']?>" target="_blank"><strong><?=get_bloginfo('siteurl')?>/<?=$link_array['ident']?></strong></a></td>
+	   <td><a href="<?=trim(get_bloginfo('siteurl'), '\/')?>/<?=trim($link_array['ident'], '/')?>" target="_blank"><strong><?=trim(get_bloginfo('siteurl'), '\/')?>/<?=trim($link_array['ident'], '/')?></strong></a></td>
 	   <td><a href="<?=$link_array['url']?>" target="_blank"><strong><?=$link_array['url']?></strong></a></td>
 	 </tr>
       <?}?>

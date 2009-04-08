@@ -46,7 +46,6 @@ span#ident_custom_input_status_msg{
 
     <input type="hidden" name="action" value="add" />
 
-
     <!-- sidebar and save button -->
     <div id="poststuff" class="metabox-holder">
       <div id="side-info-column" class="inner-sidebar">
@@ -87,7 +86,7 @@ span#ident_custom_input_status_msg{
 		  </label>
 		</p>
 		<p class="ident_msg" id="ident_custom_msg">
-		  <strong><?=get_bloginfo('siteurl')?>/</strong><input type="text" id="ident_custom_input" name="ident_custom_input" /><input type="hidden" id="ident_custom_input_status" name="ident_custom_input_status" value="0" /><span id="ident_custom_input_status_msg"></span>
+		  <strong><?=get_bloginfo('siteurl')?><?=get_option('linkshortcut_subdir')?>/</strong><input type="text" id="ident_custom_input" name="ident_custom_input" /><input type="hidden" id="ident_custom_input_status" name="ident_custom_input_status" value="0" /><span id="ident_custom_input_status_msg"></span>
 		</p>
 
 	      </fieldset>
