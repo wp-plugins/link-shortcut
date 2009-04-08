@@ -3,7 +3,7 @@
 Plugin Name: Link Shortcut
 Plugin URI: http://www.husani.com/ventures/wordpress-plugins/linkshortcut
 Description: Create and manage TinyURL-like URLs that redirect to pages both inside and outside your blog.  Must have non-default permalink structure set (i.e., other than yoursite.com?p=87) or this plugin will not work.  By <a href="http://www.husani.com" target="_blank">Husani Oakley</a>.
-Version: 1.3
+Version: 1.3.1
 */
 
 /*  Copyright 2009  Husani Oakley  (email : wordpressplugins@husani.com)

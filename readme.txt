@@ -4,7 +4,7 @@ Tags: permalink, link, links, redirect, shortcut, tinyurl, url shortener, bookma
 Donate link: http://www.husani.com/ventures/wordpress-plugins/linkshortcut/#donate
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 1.3
+Stable tag: 1.3.1
 
 Make TinyURL-like URLs (you.com/33ks8s) that redirect to pages inside / outside your blog.  Can also create human-readable aliases (you.com/facebook).
 
@@ -44,7 +44,7 @@ Link Shortcut is released to the Wordpress community under the GPL.  Please feel
 1.  Upload the Link Shortcut plugin to your blog (YOURBLOG/wp-content/plugins) and activate it using the Wordpress plugin admin screen.
 2.  Click "Link Shortcuts" in the left-hand menu and manage your links.
 
-**IMPORTANT:** If you are upgrading this plugin to 1.3, DO NOT deactivate it.  Replace the files in /plugins/link-shortcut with the new version's files.  1.3 and up will backup links during the deactivation process, but this is not backwards compatible.  Deactivating 1.2 and lower before upgrading to 1.3 will result in data loss.
+**IMPORTANT:** Deactivating 1.2 and lower before upgrading to 1.3 will result in loss of any links you've created with this plugin.  If you'd like to keep that data, simply replace the plugin files with the new version -- but be aware of the following:  There has been a database change to enable you to set a longer character length.  If you want that new functionality, you'll need to make manual edits to your DB structure to enable this (change wp_linkshortcut.ident's field type to VARCHAR(255)).  If you don't want to make manual edits but would like the new features, you'll have to bite the bullet and deactivate / unzip / re-activate.  Sorry.
 
 == Frequently Asked Questions ==
 
