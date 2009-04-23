@@ -4,13 +4,13 @@ Tags: permalink, link, links, redirect, shortcut, tinyurl, url shortener, bookma
 Donate link: http://www.husani.com/ventures/wordpress-plugins/linkshortcut/#donate
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 1.3.1
+Stable tag: 1.4
 
 Make TinyURL-like URLs (you.com/33ks8s) that redirect to pages inside / outside your blog.  Can also create human-readable aliases (you.com/facebook).
 
 == Description ==
 
-Ever want your own shortcuts without mucking about with permalink structures?  The Link Shortcut plugin allows you to create short (random numbers and letters, or short words) URLs under your blog's domain that redirect a user to other pages, either in your site or on another site.
+Ever want your own shortcuts without mucking about with permalink structures?  The Link Shortcut plugin allows you to create short (random numbers and letters, or short words) URLs under your blog's domain that redirect (301 or 302, your choice) a user to other pages, either in your site or on another site.
 
 In other words, instead of sending this url to the author's plugin page:
 http://www.husani.com/ventures/wordpress-plugins/linkshortcut/
@@ -26,6 +26,8 @@ YOU MUST USE NON-UGLY PERMALINKS FOR THIS PLUGIN TO WORK.  Your permalink struct
 
 Changelog:
 
+* 1.4:
+    - Added configurable Redirect-Type (301, 302)
 * 1.3:
     - Added ability to set default length
     - Added ability to set directory name inside URL (yourblog.com/go/993ldx)
@@ -50,7 +52,7 @@ Link Shortcut is released to the Wordpress community under the GPL.  Please feel
 
 = How does Link Shortcut work? =
 
-The Link Shortcut plugin attaches itself to various core Wordpress methods and waits for a request to be made for a shortcut URL saved to the database.  When one is, it simply does a 302 redirect to the saved URL.
+The Link Shortcut plugin attaches itself to various core Wordpress methods and waits for a request to be made for a shortcut URL saved to the database.  When one is, it simply does a redirect to the saved URL.  The redirect type can be changed (301 or 302) inside the options panel.
 
 = I installed the plugin but it doesn't work. =
 

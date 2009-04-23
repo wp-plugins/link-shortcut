@@ -23,7 +23,7 @@ class LinkshortcutManager{
     //determine final destination
     $final_destination = $this->getFinalDest();
     //redirect user
-    wp_redirect($final_destination);
+    wp_redirect($final_destination, get_option('linkshortcut_redirecttype'));
   }
   
   /**
