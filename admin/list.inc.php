@@ -36,4 +36,9 @@ are editing, we'll depending on the query string, we include the proper UI file.
       </tr>
     </tfoot>
   </table>
+
+  <br/><br/>
+  <? include LINKSHORTCUT_UI_LOC . "/footer.inc.php" ?>
+
+
 </div>

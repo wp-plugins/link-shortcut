@@ -120,4 +120,7 @@ span#ident_custom_input_status_msg{
     
   </form>
 
+  <br/><br/>
+  <? include LINKSHORTCUT_UI_LOC . "/footer.inc.php" ?>
+
 </div>

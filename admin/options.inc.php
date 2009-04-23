@@ -2,6 +2,7 @@
 if($_POST['action'] == "update"){
   update_option('linkshortcut_length', $_POST['linkshortcut_length']);
   update_option('linkshortcut_subdir', $_POST['linkshortcut_subdir']);
+  update_option('linkshortcut_redirecttype', $_POST['linkshortcut_redirecttype']);
 }
 ?>
 
@@ -32,14 +33,23 @@ if($_POST['action'] == "update"){
 	 <td colspan="2"><span class="setting-description">Optionally set a subdirectory that all URLs will be created under (i.e., http://yourblog.com/go/ -- enter /go in the field above, no trailing slash).</span>
 	 </td>
        </tr>
+       <tr>
+	 <th scope="row" valign="top">
+	   Redirect Type<br/>
+	 </th>
+	 <td><input type="text" name="linkshortcut_redirecttype" value="<?php echo get_option('linkshortcut_redirecttype'); ?>" /></td>
+       </tr>
+       <tr>
+	 <td colspan="2"><span class="setting-description">Set the type of redirect (301 or 302) that Link Shortcut uses.</span>
+	 </td>
+       </tr>
      </table>
      <input type="hidden" name="action" value="update" />
-     <input type="hidden" name="page_options" value="linkshortcut_length,linkshortcut_subdir" />
+     <input type="hidden" name="page_options" value="linkshortcut_length,linkshortcut_subdir,linkshortcut_redirecttype" />
      <p class="submit">
        <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
      </p>
    </form>
-   <hr>
-   <p style="font-size:x-small"><i><a href="http://www.husani.com/link123" target="_blank">Link Shortcut</a> plugin by <a href="http://www.husani.com" target="_blank">Husani Oakley</a>.</i></p>
+   <? include LINKSHORTCUT_UI_LOC . "/footer.inc.php" ?>
 
 </div>

@@ -61,6 +61,7 @@ class LinkshortcutInstaller{
   function _createDefaultSettings(){
     add_option('linkshortcut_length', '8');
     add_option('linkshortcut_subdir', '');
+    add_option('linkshortcut_redirecttype', '301');
   }
 
   /**
@@ -93,6 +94,7 @@ class LinkshortcutInstaller{
   function _removeSettings(){
     delete_option('linkshortcut_length');
     delete_option('linkshortcut_subdir');
+    delete_option('linkshortcut_redirecttype');
   }
 
   /**
